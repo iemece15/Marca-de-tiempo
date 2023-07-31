@@ -1,0 +1,56 @@
+[
+    {
+        "id": "99e88937bac14f45",
+        "type": "tab",
+        "label": "Marca de tiempo",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f7c423770fa1ded0",
+        "type": "inject",
+        "z": "99e88937bac14f45",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "423c1d9e8de235cc"
+            ]
+        ]
+    },
+    {
+        "id": "423c1d9e8de235cc",
+        "type": "debug",
+        "z": "99e88937bac14f45",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 280,
+        "y": 100,
+        "wires": []
+    }
+]
